@@ -1,0 +1,3 @@
+﻿@reference '../index.css';
+
+body { @apply bg-[#fafafa] antialiased; }
