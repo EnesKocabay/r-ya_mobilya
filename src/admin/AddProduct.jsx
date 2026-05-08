@@ -4,7 +4,7 @@ import AdminSidebar from "./components/AdminSidebar";
 import AdminHeader from "./components/AdminHeader";
 import { addProduct } from "../services/productService";
 
-const CATEGORIES = ["Koltuk Takimi", "Yatak Odası", "Yemek Odası", "Ofis", "Bahçe", "Diğer"];
+const CATEGORIES = ["Koltuk Takımı", "Oturma Odası", "Yatak Odası", "Yemek Odası", "Ofis", "Antre & Hol", "Bahçe", "Banyo Dolabı", "Diğer"];
 const inputCls = "w-full px-5 py-3.5 bg-gray-50 rounded-2xl outline-none border-2 border-transparent focus:border-amber-500 transition-all text-sm";
 
 export default function AddProduct() {

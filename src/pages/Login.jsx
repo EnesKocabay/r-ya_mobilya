@@ -17,7 +17,14 @@ export default function Login() {
     try {
       await login(email, password);
       navigate('/admin');    } catch (err) {
-      setError('E-posta veya şifre hatalı.');
+      console.error('Firebase auth error:', err.code, err.message);
+      if (err.code === 'auth/invalid-api-key') {
+        setError('Firebase bağlantı hatası. Lütfen config dosyasını kontrol edin.');
+      } else if (err.code === 'auth/user-not-found' || err.code === 'auth/wrong-password' || err.code === 'auth/invalid-credential') {
+        setError('E-posta veya şifre hatalı.');
+      } else {
+        setError('Hata: ' + (err.code || err.message));
+      }
     } finally {
       setLoading(false);
     }
