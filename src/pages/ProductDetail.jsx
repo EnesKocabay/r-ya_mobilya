@@ -125,7 +125,7 @@ export default function ProductDetail() {
 
             <div className="flex gap-4">
               <a
-                href={`https://wa.me/905449175246?text=${encodeURIComponent(product.name + ' hakkında bilgi almak istiyorum.\n\nÜrün: https://ruyamobilya.com/products/' + product.id)}`}
+                href={`https://wa.me/905449175246?text=${encodeURIComponent(product.name + ' hakkında bilgi almak istiyorum.\n\nÜrün: https://ruyamobilya.com.tr/products/' + product.id)}`}
                 target="_blank" rel="noreferrer"
                 className="flex items-center gap-2 px-6 py-4 bg-green-500 text-white rounded-2xl font-bold text-sm hover:bg-green-400 transition-all shadow-lg">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white">
